@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="UI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/animated looping gif - Google Search.gif"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="122*"/>
+            <RowDefinition Height="52.8"/>
+            <RowDefinition Height="765*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="1000"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--NavBar-->
+
+        <!--Title-->
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="83" Margin="318,23,0,0" Grid.RowSpan="2" Text="SLOTS" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Foreground="White" FontSize="70" FontFamily="Century Schoolbook" TextAlignment="Center" FontWeight="Bold"/>
+
+
+        <!--Slots and Slider-->
+        <Button x:Name="imageWheel1" Grid.Column="1" Grid.Row="1" Height="324" Width="262" Click="imageWheel1_Click" VerticalAlignment="Top" Background="#FF191B20" Margin="88,53,0,0" Grid.RowSpan="2" >
+            <Image x:Name="Img1" HorizontalAlignment="Right" Height="306" VerticalAlignment="Center" Width="243" Source="/images/slots/Win.png" Margin="0,0,-1,0"/>
+        </Button>
+        <Button x:Name="imageWheel2" Grid.Column="1" Grid.Row="1" Height="324" Width="262" Click="imageWheel2_Click" VerticalAlignment="Top" Background="#FF191B20" Margin="368,53,0,0" Grid.RowSpan="2">
+            <Image x:Name="Img2" Height="306" VerticalAlignment="Center" Source="/images/slots/Win.png" Margin="0,0,-1,0"/>
+        </Button>
+        <Button x:Name="imageWheel3" Grid.Column="1" Grid.Row="1" Height="324" Width="262" Margin="648,53,0,0" Click="imageWheel3_Click" VerticalAlignment="Top" Background="#FF191B20" Grid.RowSpan="2">
+            <Image x:Name="Img3" Height="306" VerticalAlignment="Center" Source="/images/slots/Win.png" Margin="0,0,-1,0"/>
+        </Button>
+        <Slider x:Name="Slider" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" PointerReleased="UIElement_OnPointerReleased" Background="White" Margin="950,147,0,0" Height="32" Grid.ColumnSpan="2">
+            <Slider.RenderTransform>
+                <CompositeTransform Rotation="90"/>
+            </Slider.RenderTransform>
+        </Slider>
+
+        <!--Toolbar-->
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="79" Margin="88,472,0,0" Grid.Row="2" VerticalAlignment="Top" Width="262" Fill="#FF191B20"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="202,496,0,0" Grid.Row="2" Text="Add Cash" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontFamily="Trebuchet MS" FontSize="25" Foreground="White"/>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="105" Margin="88,357,0,0" Grid.Row="2" VerticalAlignment="Top" Width="262" Fill="#FF545659"/>
+        <TextBlock x:Name="textBlockDollars" TextAlignment="Center" HorizontalAlignment="Left" Margin="88,366,0,0" Grid.Row="2" Text="$0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="96" FontSize="25" Grid.Column="1" FontFamily="Trebuchet MS" Foreground="White" FocusVisualPrimaryBrush="#7F000000"/>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="194" Margin="368,357,0,0" Grid.Row="2" VerticalAlignment="Top" Width="542" Fill="#FF545659"/>
+        <TextBlock x:Name="TextInfo" Grid.Column="1" HorizontalAlignment="Left" Margin="368,410,0,0" Grid.Row="2" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="141" Width="541" Foreground="White" FontFamily="Century Schoolbook" FontSize="70" TextAlignment="Center" FocusVisualPrimaryBrush="#7F000000"/>
+        <Button  Grid.Column="1" Margin="88,472,0,0" Grid.Row="2" VerticalAlignment="Top" Height="79" Width="262" Click="AddMoney" Background="{x:Null}">
+            <Rectangle x:Name="buttonAddCash" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Height="50" Margin="0,0,160,0">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/images/slots/dollar_white.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Button>
+
+
+
+
+    </Grid>
+</Page>
