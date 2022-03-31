@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,9 +85,17 @@ namespace SlotCode
 
         public async void Speak(string Text)
         {
-            var stream = await speechSynthesizer.SynthesizeTextToStreamAsync(Text);
-            mediaElement.SetSource(stream, stream.ContentType);
-            mediaElement.Play();
+            try
+            {
+                var stream = await speechSynthesizer.SynthesizeTextToStreamAsync(Text);
+                mediaElement.SetSource(stream, stream.ContentType);
+                mediaElement.Play();
+            }
+            catch (Exception)
+            {
+                Debug.WriteLine("Speech not working");
+            }
+            
         }
 
         public string SpinWheel()
