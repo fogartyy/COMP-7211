@@ -49,9 +49,9 @@
         <!--Toolbar-->
         <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="79" Margin="88,472,0,0" Grid.Row="2" VerticalAlignment="Top" Width="262" Fill="#FF191B20"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="32" Margin="202,496,0,0" Grid.Row="2" Text="Add Cash" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" FontFamily="Trebuchet MS" FontSize="25" Foreground="White"/>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="105" Margin="88,357,0,0" Grid.Row="2" VerticalAlignment="Top" Width="262" Fill="#FF545659"/>
-        <TextBlock x:Name="textBlockDollars" TextAlignment="Center" HorizontalAlignment="Left" Margin="88,366,0,0" Grid.Row="2" Text="$0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="96" FontSize="25" Grid.Column="1" FontFamily="Trebuchet MS" Foreground="White" FocusVisualPrimaryBrush="#7F000000"/>
-        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="194" Margin="368,357,0,0" Grid.Row="2" VerticalAlignment="Top" Width="542" Fill="#FF545659"/>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="105" Margin="88,357,0,0" Grid.Row="2" VerticalAlignment="Top" Width="262" Fill="#99FFFFFF"/>
+        <TextBlock x:Name="textBlockDollars" TextAlignment="Center" HorizontalAlignment="Left" Margin="88,366,0,0" Grid.Row="2" Text="$0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="96" FontSize="25" Grid.Column="1" FontFamily="Trebuchet MS" Foreground="White" FocusVisualPrimaryBrush="#7FFFFFFF"/>
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="194" Margin="368,357,0,0" Grid.Row="2" VerticalAlignment="Top" Width="542" Fill="#99FFFFFF"/>
         <TextBlock x:Name="TextInfo" Grid.Column="1" HorizontalAlignment="Left" Margin="368,410,0,0" Grid.Row="2" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="141" Width="541" Foreground="White" FontFamily="Century Schoolbook" FontSize="70" TextAlignment="Center" FocusVisualPrimaryBrush="#7F000000"/>
         <Button  Grid.Column="1" Margin="88,472,0,0" Grid.Row="2" VerticalAlignment="Top" Height="79" Width="262" Click="AddMoney" Background="{x:Null}">
             <Rectangle x:Name="buttonAddCash" Grid.Column="1" Grid.Row="2" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Height="50" Margin="0,0,160,0">
